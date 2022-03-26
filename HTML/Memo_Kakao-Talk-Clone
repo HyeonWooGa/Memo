@@ -1,0 +1,218 @@
+#1 INTRODUCTION
+
+#1.5 What Makes a Websites?
+
+-웹사이트는 전부 text이다.
+-우리가 배울 건... 만약 우리가 맞는 장소에 맞는 text를 쓴다면,
+우리도 직접 웹사이트를 만들 수 있다는 거야
+그건 아주 엄청난 일이야
+왜냐면 단지 그냥 txt 파일일 뿐이잖아
+누구나 text 파일을 만들 수 있어
+-너가 웹사이트를 만들때, 사실 너가 웹사이트를 만드는건 아니야
+너를 위해서 브라우저가 웹사이틀 만들어 주는거지.
+브라우저는 너가 쓴 코드를 이해해(ㅋㅋㅋ 대부분의 인간은 이해못해)
+브라우저는 너의 코드를 생생하게 구현을 해주는 거야
+-개발자로써 우리가 해야 할 건
+어떤 종류의 text를 써야하고,
+text를 어디에 써야하는지를 배우는 거야
+만약 이 두가지 규칙을 잘 따르고, 브라우저에게 text를 준다면
+웹사이트르 만들게 되는 거야. 알겠징?
+아주 멋지고 아주 쉬운거야
+
+#1.6 What is HTML
+
+-지난 강의에서 웹사이트는 단지 text일 뿐이라고 했어
+사실 웹사이트는 2가지 종류의 text로 구성되어 있어
+최소한 2가지에서 최대 3가지 종류의 텍스트
+(이제 text가 아니라 language언어 라는 표현을 씀)
+-오직 3가지 언어만 있어.
+이게 웹개발자에게 쿨한 일들 중 하나지
+이 3가지 언어만 배우면 되니까
+재미있고 쿨하지. 3가지 언어만 배우면 되니까
+-브라우저는 인간의 언어를 이해하지 못 해서
+뭐가 Title인지 뭐가 Content인지 다 알려줘야함
+-중요한건 HTML을 어떻게 사용하는지 이해하는거야
+**HTML을 브라우저에게 웹사이트의 content가
+어떻게 구성되어 있는지 설명할 때 사용해**
+-오직 HTML만이 부라우저에게
+content가 어떻게 구성되어있는지 설명 가능
+Only HTML can do that among all of Language
+
+#1.7 What is CSS(Cascading Style Sheet)
+
+-CSS는 HTML과 함께 사용한다
+두 언어는 항상 함께 사용한다
+-**CSS는 brower에게 웹사이트가 어떻게 보여야하는지 알려줌**
+-HTML은 browser에게 웹사이트의 content가 무엇인지 알려줌
+CSS는 browser에게 웹사이트의 그 content가 어떻게 보여야 하는지 알려줌
+알겠징?
+-HTML "browser야 이건 title이야"
+CSS "browser야 그 title은 녹색이어야해"
+-HTML은 뼈대(Skeleton), CSS는 근육(Muscles)
+
+2022.03.06 01:30
+
+#1.8 What is JavaScript
+
+-Javascript는 웹사이트의 뇌
+-Youtube Music에서 shuffle, menu 등의 버튼으로 클릭하여 기능을
+주는 것이 Interactivity이고 이것이 웹사이트의 뇌
+모든 웹사이트에서 뇌가 필요한 것은 아님
+-웹사이트를 만드는 것 : 3가지 언어
+**HTML for the content
+CSS for the design
+Javascript for the brain, for the interactivity(interaction)**
+
+#1.9 Recap
+-HTML is Markup language, Markup means content
+-CSS is design language, style language, visual thing
+-Javascript is to make the website little bit smarter, interactive
+"I click, something out of them. I click somewhere, something shows out
+that is javascript"
+-3가지 언어 중 javascript만 웹 프로그래밍 언어
+-HTML is skeleton, CSS is muscles, Javascript is brain
+
+#2 LEARNING HTML
+
+#2.0 Our First HTML File
+-**파일명과 폴더명은 항상 소문자로 작성한다**
+
+#2.1 Setup and Errors
+-wakatime, Community Material Theme, Material Icon 확장 프로그램
+-**규칙을 따르지 않더라도 브라우저는 나에게 작성된 내용을 보여줄거야, and that’s very important”
+좋은 점이면서 나쁜점
+뭐가 잘 못 되었는지 알려주지 않음
+하지만 실수하더라도 페이지에서 에러가 보이진 않음
+
+#2.2 Our First HTML Tag
+-HTML의 목적은 브라우저에게 뭐가 뭔지 이야기 해주는 것
+예를들어 여기부터 여기는 링크,
+여기부터 여기는 타이틀, 이런식
+-tag는 label이다
+-<food>김치</food>
+김치는 food라는 뜻(food는 HTML에 적용되지 않는 태그)
+-<h1> 같은 옳은 태그를 적용하면 브라우저가 이해하고 작동함
+-모든 태그를 알 필요는 없지만 작동원리는 꼭 이해해야함
+-<food>, <h7> 같이 존재하지 않는 태그는 사용해도 브라우저가 모르기 때문에 해당 태그 사이에 있는 글씨에 아무작용도 하지 못 한다
+
+#2.3 More Tags and Prettier
+-ul이 unordered list ‘ 으로 리스팅
+-or is ordered list 1,2,3,4… 등으로 리스팅
+-Prettier
+
+#2.4 Tag Attributes
+-<a> tag는 anchor 즉, link 라는 뜻이고
+<a> tag만 열고 닫으면 아무 일도 벌어나지 않지만 attribute 즉, 특성인 href tag 를
+<a href=“http://google.com”>Go to google</a> 와 같은 방식으로 쓰면 해당 텍스트를 눌렀을 때 링크로 이동하도록 적용가능
+-<img> tag는 self closed tag 라서
+<img src(소스)=“이미지 주소” /> 와 같은 형식으로 사용
+-src 는 img tag에만 herf는 a tag에만 사용가능 위와 같이 각 태그에만 작용하는 특성들 존재
+-img의 attribute, target 의 default는 _self, _blank를 활용해서 새창 열기도 가능
+
+#2.5 More Tags and Head
+-<img src=“img/logo.jpg” />
+Path Notation(경로 표기법)
+-attribute는 정말로 유용하다
+-HTML 문서의 구조를 작성하는 방법
+<!DOCTYPE html> //모든 html 코드의 첫줄
+<html>
+
+</html>
+-<head>와 <body>, <head> 는 보이지 않는 부분, 웹사이트의 환경
+
+2022.03.06 11:05
+-크롬탭에 home.html과 같이 탭이름이 뜨는 게 아니라 Korea Times, Nomad corder와 같이 뜨게 하려면 룰을 따라야함(head태그)
+-<head>
+	<title> SPOON </title>
+	sdfsadkfasd //웹사이트에 그냥 글씨로 나오고 HTML에서는 상관없지만 CSS와 JS에서는 오류 발생, HTML에서 오류발생하지 않는 다고해서 그렇게 작성해도 되는 것은 아니고 본디 <head>태그 안에서 사용되는 내용들은 웹페이지에서 보이지 않는다
+<head>
+
+#2.6 It’s All About the Head
+-<title> 태그는 구글에서 보이는 홈페이지 제목
+-<meta> 태그는 구글에서 보이는 홈페이지 설명, 부가적인 정보라는 뜻
+-<meta> has two attributes, name & content // 구글은 name=“description”의 정보를 가져옴, <meta> is self closed tag
+-<meta charset=“utf-8” />은 항상 넣어줘야함, 우리가 어떤 언어(한글, 특수문자 등등을 쓰는지 HTML 에게 알려 줌, 안쓸 시 가끔 글자 깨짐)
+-<html>태그에 lang=“”이라는 atrribute 가 있는데 이는 검색엔진에 우리가 사용하는 언어가 무엇인지 알수있도록 도움을 줌
+-<head> 태그 안에 있는 정보는 브라우저에게 최대한 명확하게 우리의 웹사이트가 무엇인지 알려주는 것 (언어, 디스크립션, 타이틀 등등)
+-<link 
+	rel=“shortcut icon”
+	href=“m.png”
+/> 	으로 타이틀 앞에 아이콘 삽입 가능
+-구글이 사이트를 어떻게 보는지 head에서 정의하고 헤드는 정말 강력하다
+-<meta property=“og:image” content=“blah blah.png” />
+<meta property=“og:title” content=“Spoon DAO” />
+<meta property=“og:description” content=“PFP of HyeonWooGa” />
+등으로 카카오톡에 공유될때 페이지의 모습을 설정할 수 있고 페북, 트위터 모두 각각의 meta property atrribute를 사용해서 적용 가능, 정말 강력한 기능
+
+#2.7 More Tags
+-HTML, CSS, Javascript 등을 검색할 때 항상 뒤에 mdn 키워드를 붙여서 firefox를 운영하는 mozila develope network가 제공하는 정보들을 봐야함, w3school은 놉
+-위의 사이트에서 HTML 모든 HTML태그를 볼 수 있음
+-HTML도 꾸며주는 태그가 몇 가지 있지만 꾸미는 것은 CSS로 하는 것이 예쁘다
+-<p>(paragraph) 태그 안에 글씨의 폰트, 위치, 효과 등을 입힐 수 있는 여러 태그가 있음
+-<sub></sub> 과 같이 시작 태그와 마침 태그를 동시에 수정하려면 ‘control+d’ 를 입력해주면 됌 //근데 나느 안됌
+-enabled와 true는 같은 의미
+-모든 atrributes를 욍울 필요는 없지만 백서문서를 자주 보면서 각각 태그 들의 기능을 알아두면 좋을 것 같음 + 영어 공부
+
+#2.8 Form Tags
+-form을 만드는건 환상적이야
+-form을 만드면서 태그와 아트리뷰트의 강력함을 느껴보자
+-먼저 form 태그를 만들고 양식들은 form 태그 안에 추가
+-form 태그 안에서 가장 중요한 것은 input태그 모든 웹사이트는 input 태그가 있다
+-<tagname attrname=“attrvalue”> flflflflfl  </tagname> //atrrvalue가 다양할때
+-<tagname required attrname = “attrvalue”> flflflflfl </tagname> //atrrvalue가 true or false 처럼 단순할때
+-<input required placeholder=“(anythings” type=“text, file, password, submit etc” value(is placeholder for type=“submit”) =“anythings” disabled />
+
+#2.9 More Tags and IDs
+-<label> 태그는 폼 태그에 체크박스를 만듦
+-<label> tag의 atrribute for=“( )”와
+<input> tag의 atrribute id=“( )”는 같아야함
+-and if you click label tag in a website then activate input
+-if you type url, email, etc on type attribute for input tag, that makes the input tag get defined information only
+-also date in type attribute of input tag makes we have to input numbers only
+-and there are too many attribute(function) in input & label tag
+we should try them with MDN’s website
+-but important thing in this lecture is **ID** ID need to be unique cause CSS or another tag in HTML use the ID to identify a identified tag to give function
+-recap, ID has to be used all of tag in body, but Each IDs of tags need to be unique
+
+#2.10 Semantic HTML
+-A tag and attributes are very powerful if we know how to use them.
+-There are tags have meaning and don’t have meaning.
+-Nico told us philosophy behind making HTML document.
+-Div(=division) is box, container.
+-If we wanna make contents are put under each other then we will put content into div box instead <br>.
+-Boxes can not be each other next.
+-Div has function but doesn’t have any value(=meaning) to the document on the semantic side.
+-Semantic is something that we can extract meaning when we look at doc.
+-<header> could replaced by a div.
+but we can know <header> is header.
+-We have <header>, <main>, <footer>, etc, that can be replaced by a div, but It’s harder to understand HTML doc than we describe by Semantic tag when we read HTML doc first. that means we need times more to understand HTML doc if we use div.
+-**So we should use Semantic tag as good as we can to understand HTML doc faster.**
+-Lastdays, we don’t have Semantic tag so we use only div and span, etc.
+But now we have Semantic tag like header, address, footer, aside, etc to give information about HTML doc to browser & developer.
+So we should try to use Semantic tag as good as we can.
+-(Should read HTML tags & attributes on HTML website of MDN)
+-We will learn ‘class’ of HTML in CSS part cause class are used with CSS.
+
+#2.11 Recap
+-HTML is made by tags.
+-We can make any tags but if we don’t keep the rules then Browser doesn’t understand and isn’t activated.
+That is HTML.
+-Tag is closed same tag of open tag.
+ex) <main></main> O, <main></aside> X
+-HTML is not powerful without attributes.
+ex) <saram name=“nico”>:)</saram>
+<tagname attrName=“value”>content</tagname>
+-Always use “ “(double quotes)
+-We have so many tags and attributes.
+-Some attributes apply all the tags.
+ex)id, Any tags can have an id.
+-But for example, Only image can have src.
+-Don’t forget some elements add meaning to our cords. (Semantic tags)
+ex) header, main, footer, nav are container. and div is generic container.
+but we wanna give meaning to containers.
+-Also, Don’t forget the <head>, very important part of our Websites, is configuration Websites.
+-Do not worry if you do not remember these tags, Nico just wants me to remember that they exist. So now you know they exist, we can google them later, and we can see exactly and we can copy and paste.
+-We are not a bad programmer if we don’t remember HTML tags and we shouldn’t try to memorize any of this things.
+-We are going to memorize what we use more often and what we use more often is header, main, footer, navigation and sidebar/aside.
+-Do not waste our time.
+-We know everything theirs to need to know for HTML we have documentation, Do not memorize, just remember, understand and know that there is google for us, we can google if we want to. 
