@@ -1,2 +1,1589 @@
 JavaScript
 2022.03.26 11:19
+
+#1.1 What Are We Building
+
+- 이 강의에선 모멘텀 클론을 진행, 모든 것을 바닐라 JS로 작성
+
+#1.2 Requirements
+
+- 프로그래밍을 몰라도 웹사이트를 만드느 기본 언어인 HTML, CSS 의 기본만 알아도 수강가능
+
+#1.3 Software Requirements
+
+- 인터넷 익스플로어만 아니면 됌
+
+- VSC 로 모든 것을 만듬, 군인 등 프로그램을 설치 못 한다고해도 어떻게 들을 수 있을지 이어지는 강의에서 알려줌
+
+- 크로미움 브라우저가 좋음, 크롬, 브레이브, 네이버 웨일 등등
+
+#1.4 Why JS
+
+- 1) 왜 자바스크립트가 인기 있나? 개발자에겐 환상적 2) 자바스크립트를 잘하면 앞으로 미래가 얼마나 창창한가? 웹사이트말고도 자바스크립트로 할 수 있는 것이 많음 3)자바스크립트가 인기 많은게 누구에겐 불행인가?
+
+- 자바스크립트는 10일만에 만들어짐
+
+- 넷스케이프 때문에 자바스크립트를 만듬
+
+- 넷스케이프는 웹사이트가 인터랙티브하게 되길 원해서 만들었고 그 후로 인터넷붐이 오고 이미 사용되던 자바스크립트를 쭉 사용하게 됌
+
+- 새로운 프로그래밍 언어가 아닌 프랑켄슈타인 같은 언어를 사용하게됌 덕지덕지 붙이고 고치고, 자바스크립트
+
+- 자바스크립트가 프론트엔드에서 쓰이는 유일한 프로그래밍 언어
+
+- 자바스크립트가 웹 전체를 아우르는 유일한 언어여서 자바스크립트를 하게 된다면 자바스크립트만 쓰면 됌
+
+- 예를들어 파이썬 같은 경우 컴퓨터에 깔아야하지만 자바스크립트는 모든 브라우저에 내장 되어 있어서 다운 받지 않음
+
+- 자바스크립트, HTML, CSS 는 브라우저에 내장되어 있음
+
+- 플래쉬는 깔았어야 했지만 자바스크립트는 깔필요 없이 바로 사용 가능
+
+- 자바스크립트가 싫더라도 다른 프로그래밍언어를 쓸수가 없음,프론트엔드 한정
+
+- 백 엔드에는  루비, 파이썬, 고, 자바 등등 좋아 하는 것을 고를 수 있음
+
+- 어디나 자바스크립트를 사용하는 것이 큰 당점
+
+#1.5 Why JS II
+
+- 자바스크립트로 만들 수 있는 것을 알려줌
+
+- three.js 는 자바스크립트로 3D 세계를 구현하는 것, 데이터 시각화 구현 가능 비디오 게임도 만들 수 있음 
+
+
+- 예술적 감각이 있고 3D 게임을 만들고 싶다면 만들 수 있음 
+
+- 리액트 내이티브, 자바스크립트만으로 모바일, 데스크탑 앱 작성 가능, 안드로이드, IOS
+
+- 일렉트론, 자바스크립트, html, css 프로그램을 만들 수 있음, VSC도 일렌트론으로 만들어짐
+
+- 백엔드도 자바스크립트로 만들 수 있음, 일렌트론
+
+- 유튜브 클론 강의에서 자바스크립트로 풀스택 강의 가능
+
+- 3D 로 무언가를 만들고 싶다면 자바스크립트가 좋은 선택, 대부분 자바스크립트로 사용, 실시간도 가능, 머신러닝도 가능, 사람의 동작인식 등등
+
+- 자바스크립트는 정말 강력함, 하나의 언어로 웹사이트, 백엔드, 인공지능, 채팅기능, 데스크탑 앱, 안드로이드, IOS 앱, 모두 가능한 프로그래밍 언어
+
+#1.6 Online IDE
+
+- 아이패드나 다운로드 권한이 없는 컴퓨터에서 사용가능
+
+- VSC 를 다운로드해서 사용중이라면 다음 강의로 이동. OK
+
+#2.0 Your First JS Project
+
+- 자바스크립트를 다루는 첫번째 방법은 브라우저의 콘솔을 사용하는 것
+
+- 하지만 콘솔은 긴 코드를 쓰기위해서 만들어진 것은 아님
+
+- 콘솔은 자바스크립트와 사용하긴 좋지만 긴 코드를 만들기는 어려움
+
+- CSS 와 자바스크립트를 브라우저에서 우리가 원하는 데로 사용하기 위해서는 HTML 이라는 글루(접착제)이 있어야함
+
+- 브라우저는 HTML 을 열고, HTML 은 자바스크립트와 CSS 를 가져옴
+
+- 자바스크립트 HTML 코드에 추가는 <body> 맨 밑에 
+    <script src="app.js"></script>
+
+
+- 우리는 앞으로 콘솔에 있는 자바스크립트를 자주 보기 때문에 콘솔을 계속 켜놓는 것에 익숙해 저야함
+
+#2.1 Basic Data Types
+
+- 1) interger 숫자 2
+
+- 2) float 1.4
+
+- 데이터 타입을 다 외울 필욘 없고 이런게 있따고 알고 있으면 됌
+
+- 3) string(text), “hello” 와 같이 입력해야함 숫자와 다름, 숫자는 그냥 입력해도 자바스크립트가 알아 들음, 더하기도 가능, 처음부터 끝까지 text 로 되어 있는 것이 string
+
+- 나중에 다른 데이터 타입도 알아볼 것이지만 위의 3가지가 가장 기본이고, 위는 사람도 쓰는 것이지만, 나중에 배울것들은 컴퓨터를 위한 것
+
+#2.2 Variables
+
+- console.log(545454); , 콘솔에 log 혹은 print 하는 일을 함, 숫자와 스트링을 넣을 수 있음
+
+- 계산도 사용가능, 자바스크립트는 위에서부터 아래로 코드를 읽는다
+
+- 프로그래머가 되고 싶으면 게을러 지는 법을 알아야한다.
+
+- 코드를 적게써야 에러도 적고 시간도 덜 걸리고 전반적으로 더 좋다
+
+- 매번 모든 값을 쓰고 지우고 일을 하지 않기위해 변수 사용
+
+- const a = 5; 와 같이 변수정의
+
+- 느낀점, 전략적으로 변수를 사용하여 코드를 짜야한다
+
+- 자바스크립트 세상에서 띄워쓰기가 필요하다면 다음 단어에 대문자를 사용해줌, veryLongerVariableName 과 같이 사용(camel case)
+
+- 게을러지는 법을 알아야 한다 = 효율적으로 일을 할 줄 알아야 한다
+
+#2.3 const and let
+
+- 변수를 만드는 방법 두가지, const & let
+
+- const 는 상수, 변경 불가능 let 은 변경가능, 코드 중간에 다른 변수값을 줄 수 있음(업데이트)
+
+const a = 5;
+const b = 2;
+let myName = "Newbie";
+
+
+console.log(a+b);
+console.log(a*b);
+console.log(a/b);
+console.log("hello " + myName);
+
+myName = "HyeonWooGa";
+
+console.log("My New Name is " + myName);
+
+- 몇몇 변수는 고정시켜놓고 몇몇 변수는 바꿀 수 있게 할때 유용함
+
+- 다른 개발자에게 정보를 줄 수도 있음
+
+- 변경 가능한 것 외에는 const & let 은 동일한 기능을 함
+
+- 기본적인 변수는 const 로 사용하고 variable 을 업데이트 할 경우에만 let 을 사용
+
+- 대부분은 const 로 작성, 필요할 때만 let 사용
+
+- const & let 은 패치로 인해서 생긴 것, 처음부터 있지는 안 았음
+
+- 전에는 var 만 있었음, var 은 어디서나 업데이트 가능했었음
+
+- 하지만 var 만 사용하면 내가 변수 업데이트를 하지 않았을 때 오류가 뜨지 않음, 그래서 const 와 let 등장
+
+- Always const, Sometimes let, Never var
+
+#2.4 Booleans
+
+- number & string 과는 다른 데이터 타입
+
+- Booleans = true or false, 사용자가 로그인 했는가? 등의 용도에서 참, 거짓만 판명
+
+- null = notingness, null 은 false 와 다르다 false 는 false 라는 값이 있는 것이고 null 은 변수값이 없다는 뜻, 비었다는 것이 아니라 없다로 변수 값이 채워진 것
+
+- undefined, 말그대로 정의되지 않았다느 ㄴ뜻, true, false, null 은 각각의 값으로 정의된 것, 컴퓨터 메모리 안에는 공간이 존재하지만 아무런 값도 들어가있지 않은 것
+
+- null 은 절대 자연적으로 발생 하지 않는다, 우리가 변수 안에 어떤 것이 없다는 것을 알려주려고 할때 사용
+
+- undefined 는 변수만 정의되고 변수값이 정의 되지 않았을 때, 자연적으로 발생 가능
+
+- 우린 많이 연습할 것이다
+
+- true, fall, null, undefined
+
+#2.5 Arrays
+
+- 대이터를 정리하는 법
+
+- 컴퓨터과항에서 매우 큰 부분, 데이터 구조
+
+- 1)시작과 끝에 대괄호를 써야함 2)array 안의 항목들을 쉼표로 분리
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+const nonsense = [1,2,"hello",false,null,true,undefined,"Newbie"];
+
+console.log(daysOfWeek);
+console.log(nonsense);
+
+- 컴퓨터는 숫자를 0부터 쓰기 떄문에 5번째 인자를 가져오고 싶으면 아래와 같이 해야함
+console.log(daysOfWeek[4]);
+
+- array 는 기본적으로 살아있는 것, 우리는 어레이를 통해서 여러가지를 할 수 있음,
+
+- 어레이에서 있는 것을 가져 올 수 있고 어레이에 새로 추가할 수 도 있음
+daysOfWeek.push("sun");
+
+- 변수명.기능(…); 는 function 이라고 함
+
+- array 의 첫번째 목적은 하나의 변수 안에 데이터의 list를 가지는 것
+
+- array 는 가장 기초적이고 필수적인 데이터 구조
+
+- 어레이 만드는 법 엘레먼트를 가져오는 법을 배웠다
+
+#2.6 Objects
+
+- xx.xx 같은 것을 각자가 만들 수 있다
+
+- object 는 함수 같은 것
+const player = {
+    name: "Newbie",
+    points: 80000,
+    fat: true,
+};
+
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
+
+- 업데이트도 가능, 오브젝트가 const 이고 const 안의 뭔가를 추가, 업데이트하는 것은 가능하다 
+const player = {
+    name: "Newbie",
+    points: 80000,
+    fat: true,
+};
+
+console.log(player);
+
+player.fat = false;
+
+console.log(player);
+—
+const player = {
+    name: "Newbie",
+    points: 80000,
+    fat: true,
+};
+
+console.log(player);
+
+player.lastName = "HyeonWooGa";
+
+console.log(player);
+
+- object, property 를 가진 데이터를 저장하도록 해줌, array 와 비슷하나 각자의 값들에 의미를 줄 수 있음, 각자의 값들의 의미가 필요없을땐 array 사용
+
+- 오브젝트 내의 값들 및 프로퍼티 업데이트 가능
+const player = {
+    name: "Newbie",
+    points: 80000,
+    fat: true,
+};
+
+console.log(player);
+
+player.lastName = "HyeonWooGa";
+
+console.log(player);
+
+player.points = player.points + 20000;
+
+console.log(player["points"]);
+
+#2.7 Functions part One
+
+- function 도 만들어서 사용 할수 있다, 우리가 계속 반복해서 사용할 수 있는 코드조각(함수 개념)
+
+- 개발자들은 항상 적은 코드를 적고싶다
+
+- function 은 어떤 코드를 캡슐화해서 실행을 여러번 할 수 있게 해줌
+
+- function 을 작성해주고 function 에 입력값을 추가로 주고 사용할 때는 argument(인수) 가 필요함
+
+- argument, function 을 실행하는 동안 어떤 정보를 function 에게 주는 방법
+
+function sayHello(nameOfPerson, age) {
+    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
+}
+
+sayHello("Newbie", 29);
+sayHello("Zzaru", 27);
+sayHello("KongKong", 0);
+
+function plus(firstNumber, secondNumber) {
+    console.log(firstNumber + secondNumber);
+}
+
+plus(60, 8);
+
+function divide(a, b) {
+    console.log(a/b);
+}
+
+divide(1000, 10);
+
+- function 에서 선언된 인자(argument) 들은 해당 function 에서만 유효하다
+function plus(firstNumber, secondNumber) {
+    console.log(firstNumber + secondNumber);
+}
+
+console.log(firstNumber); //에러 발생
+plus(60, 8);
+
+- 우리가 function(함수) 에 argument(인자) 를 주고 받는 방법에 대해서 배움
+
+const meetFirstTime = {
+    sayHello: function(me, otherPerson) {
+        console.log("Hello! " + otherPerson + ". My name is " + me + ". Nice to meet you.");
+    }
+};
+
+meetFirstTime.sayHello("Newbie", "Zzaru");
+
+—
+
+const meetFirstTime = {
+    sayHello: function(me, otherPerson) {
+        console.log("Hello! " + otherPerson + ". My name is " + me + ". Nice to meet you.");
+    },
+    when: '"People meet firsttime each other."'
+};
+
+meetFirstTime.sayHello("Newbie", "Zzaru");
+console.log(meetFirstTime.when);
+
+#2.9 Recap
+
+- const, let, string
+
+- boolean
+
+- null, undefined
+ 
+-  const array [];, array.push(“…”)
+
+#2.10 Recap II
+
+- const object {};, 업데이트, 추가 가능, console 도 object 다
+
+- function functionName() {}, 소괄호 안에 argument(인수)를 주고 인수를 입력받아서 구동 가능, 그리고 각 인수는 해당 함수의 body 내에서만 존재 
+
+- object 와 function 을 합쳐서 console.log() 와 같은 코드 사용가능
+
+- 과제 : 계산기 기능 구현
+const calculator = {
+    plus: function(a,b){console.log(a+b);},
+    minus: function(a,b){console.log(a-b);},
+    multiply: function(a,b){console.log(a*b);} ,
+    divine: function(a,b){console.log(a/b);},
+    square: function(a,b){console.log(a ** b)}
+};
+
+calculator.plus(10,5);
+calculator.minus(10,5);
+calculator.multiply(10,5);
+calculator.divine(10,5);
+calculator.square(10,5);
+
+#2.11 Returns
+
+- 이 영상의 요지는 console.log() 를 쓰지 않는 것
+
+- 실제로 우리는 콘솔에 로그로 보고 싶은 것이 아니라 화면에 띄우거나 해당 정보로 다른 것을 하고 싶은 것
+
+- 우리가 원하는 건 해당 계산의 겨로가를 우리에게 주는 것
+
+- function 은 나를 위해 무언가를 해주는 것,
+
+- return 사용 예시
+const age = 29;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+console.log(krAge);
+
+- 이제는 console 에 출력하려고 function 을 쓰지않고 대신 어떤 작업을 처리하고 그 결과값을 return 받기 위해서 사용함
+
+- function 이 function 밖과 소통하는 방법
+
+- return 을 통해서 “상호의존적” 관계를 가질 수 있다
+
+#2.12 Recap
+
+- 함수에서 리턴하고 해당 값을 변수로 받아주면 변수에 저장됌
+
+- 함수는 return 하는 순간 종료됌
+
+#2.13 Conditionals
+
+- Booleans 를 사용할때 항상 사용, if문
+
+- prompt() : 사용자에게 창을 띄우게 해줌, 두개의 인수를 받음, 
+
+- prompt() 를 사용하면 웹페이지 내에서 정보를 입력할 떄까지 javascript 를 멈춰주는 기능이 있음
+
+- 해당기술은 자바스크립트에서 아주 오래된 기능이고 브라우저는 여전히 지원하지만 우리는 지금 배울때만 사용하고 앞으로는 사용하지 않음
+
+- console.log(typeof 변수); 를 적으면 변수의 타입을 볼 수 있음
+
+- prompt() 에서 입력받는 값의 데이터타입 디폴트는 string 따라서 숫자로 바꾸고 싶으면 데이터타입 변경을 해줘야함
+
+- “15” 를 15 로 바꾸는 방법, parseInt() 라는 function 을 사용함
+const age = prompt("How old are you");
+
+console.log(typeof age, typeof parseInt(age));
+
+- 만약 텍스트를 입력할경우  parseInt() 를 사용하고 typeof 하면 NaN(Not a Number) 발생
+
+- 우린 NaN 인지 아니지만 확인하면 됌
+
+#2.14 Conditionals part Two
+
+- isNaN() : boolean 값을 return 해줌,  인수의 값이 NaN 이면 return true, 인수의 값이 NaN이 아니면 return false
+const age = parseInt(prompt("How old are you"));
+
+console.log(isNaN(age));
+
+- if(condition) {} else {} : condition 은 boolean 이여야함
+
+const age = parseInt(prompt("How old are you"));
+
+if (isNaN(age)) {
+    console.log("Please write a number.")
+} else {
+    console.log("Thank you for writing your age.")
+}
+
+#2.15 Conditionals part Three
+
+- if() {} else if() {} else {} else if 사용으로 여러개의 조건문 동시에 사용 가능
+
+const age = parseInt(prompt("How old are you"));
+
+if (isNaN(age)) {
+    console.log("Please write a number.")
+} else if(age<18) {
+    console.log("You're too young.")
+}
+ else {
+    console.log("You can drink.")
+}
+
+- AND operator : true && true === true, true && false === false, false && true === false, false && false === false 
+const age = parseInt(prompt("How old are you"));
+
+if (isNaN(age)) {
+    console.log("Please write a number.")
+} else if(age>18) {
+    console.log("You're too young.")
+} else if(age<=50 && age>=18) {
+    console.log("You can drink.")
+} else {
+    console.log("You can drink.")
+}
+ 
+- Or operator : true || true === true, true || false === true, false || true === true, false || false === false
+
+const age = parseInt(prompt("How old are you"));
+
+if (isNaN(age) || age<0) {
+    console.log("Please write a real positive number.")
+} else if(age>18) {
+    console.log("You're too young.")
+} else if(age<=50 && age>=18) {
+    console.log("You can drink.")
+} else {
+    console.log("You can’t drink.")
+}
+
+- else 는 optional 이고 수많은 조건문 else if 로 추가 가능
+
+#2.16 Recap
+
+- a === b :  a와 b가 같다면 true, a와 b가 다르다면 false
+
+- a !== b : a와 b가 같다면 false, a와 b가 다르다면 true
+
+const age = parseInt(prompt("How old are you"));
+
+if (isNaN(age)) {
+    console.log("Please write a number.")
+} else if(age<18) {
+    console.log("You're too young.")
+} else if(age<=50 && age>=18) {
+    console.log("You can drink.")
+} else if(age > 80 && age !== 100) {
+    console.log("You can do whatever you want.")
+} else if(age === 100) {
+    console.log("Wow you are wise.")
+} else {
+    console.log("You can drink.")
+}
+
+- 자바스크립트는 위에서 아래로 읽고 else if 문은 하나만 실행되기 때문에 아래와 같이도 변경 가능
+
+const age = parseInt(prompt("How old are you"));
+
+if (isNaN(age)) {
+    console.log("Please write a number.")
+} else if(age<18) {
+    console.log("You're too young.")
+} else if(age<=50 && age>=18) {
+    console.log("You can drink.")
+} else if(age === 100) {
+    console.log("Wow you are wise.")
+} else if(age > 80) {
+    console.log("You can do whatever you want.")
+} else {
+    console.log("You can drink.")
+}
+
+- 항상 안쪽에 있는 괄호부터 실행됌
+
+- 그리고 operator 는 원하는 만큼 많이 추가 할 수 있음
+
+#3.0 The Document Object
+
+- 자바스크립트를 사용하는 이유는 HTML 과 인터랙티브(상호작용) 하기 위해서
+
+- 자바스크립트를 통해서 HTML 의 요소들을 변경하고 읽을 수 있음
+
+- object “document” 는 우리가 HTML 에 접근할 수 있는 자바스크립트읭 object
+
+- console.dir(document) 를 입력하면 자바스크립트 관점으로 HTML 을 보여줌(as object), 이건 정말정말 중요한 것
+
+- 자바스크립트는 HTML 에 연결되어 있고 이는 document(=web site) 로 부터 시작
+
+- HTML 파일과 JS 파일에 같은 위치의 코드를 수정하면 JS 코드가 승리함
+
+#3.1 HTML in Javascript
+
+- HTML 요소를 어떻게 JS 에 끌어오는지(grab) 공부, 앞으로 정말x13 많이 사용함
+
+- 우리는 HTML 에서 항목을 가져와서 Javascript 에서 이용할 것임, 어떻게 동작하는 지 정확히 이해하는 것이 중요함
+
+- getElementById() : HTML 의 id 를 이용해서 해당 요소 자바스크립트로 가져오게 하는 function 
+const title = document.getElementById("title");
+
+title.innerText ="Got you!";
+
+console.log(title.id);
+console.log(title.className);
+
+- HTML 에서 항목을 가져오는 방법은 여러가지
+
+- 어떤 HTML 요소든 가져와서 변경 할 수 있음
+
+#3.2 Searching For Elements
+
+- 우리는 이전 강의에서 id 를 통해서 HTML 요소 불러오는 방법을 배웠지만, 대부분의 경우에는 id 가 아닌 class 를 사용
+
+- getElementByClassName() : class 명으로 HTML 요소를 불러오는 것, array 에 저장됌
+
+const hellos = document.getElementsByClassName("hello");
+
+console.log(hellos);
+
+- getElementByTagName() : 태그명으로 불러오는 것, array 에 저장됌
+
+const title = document.getElementsByTagName("h1");
+
+console.log(title);
+
+- 엘레먼트를 가져오는 가장 멋진 방법 querySelector() : element 를 CSS 방식으로 검색 할 수 있음
+
+const title = document.querySelector(".hello h1");
+
+console.log(title);
+
+—
+const title = document.querySelector(“div h1");
+
+console.log(title);
+
+- HTML 요소를 불러오는 가장 좋은 방법이 querySelector() 함수를 쓰는 것이고, 앞으로 해당 함수만 사용하게 됌, CSS selector 와 같은 방법
+
+- But, querySelector() 는 조건에 해당하는 요소 중 가장 첫번째 만나는 요소만 가져옴
+
+- So, 같은 조건에 맞는 요소들을 한꺼번에 불러올때, querySelectorAll() 을 사용, array 로 return
+
+#2.3 Events
+
+const title = document.querySelector(".hello h1");
+
+title.style.color = "blue";
+
+- 위와 같이 자바스크립트에서 CSS요소들이 모여있는 style object 를 가져와서 변경할 수도 있다.
+
+- 이를 통해서 자바스크립트가 브라우저에서 얼마나 강력한지 알 수 있다.
+
+- 하지만 대부분의 경우에서 우리는 Javascript 에서 event 를 listening 한다.
+
+- event : click, hover-over, press-enter 등등의 activate 한 동작들.
+
+- wifi 에서 접근이 해제되는 것 또한 event
+
+- 이런 모든 event 들을 Javascript 는 들을 수 있다.
+
+- 지금은 click event 를 배워본다.
+
+- 우리는 HTML 요소를 Javascript 로 불러오는 방법은 이미 알아서 event 듣는 방법을 배우며 된다
+
+- addEventListener(a,b) : a 에서 무슨 event 를 듣고 싶은지 지정 해준다 ex)”click b 에서 a 이벤트 발생시 무엇을 할지 지정해준다
+
+const title = document.querySelector(".hello h1");
+
+function handleTitleClick() {
+    title.style.color = "blue";
+}
+
+title.addEventListener("click", handleTitleClick);
+
+- 위의 코드에서 b 자리에 handleTitleClick() 을 해주면 “click” event 와 상관없이 function 이 실행되고
+
+- () 를 제외한 function 이름만 주면 해당 이벤트가 나타났을 때만 실행된다(스위치)
+
+- 페이지에서 엘레먼트를 찾아오고 엘레먼트에 이벤트 리스너를 추가해서 이벤트가 발생하면 반응을 하게 만듬
+
+#3.4 Events part Tow
+
+- Web APIs : MDN 에서 Javascript 관점으로 HTML 요소들을 보는 것, 여기서 사용할 수 있는 event 들을 찾아볼 수 있다
+
+- 아니면 console.dir() 로 HTML 요소 검색후에 앞에 on 이 들어간 property 들은 사용할 수 있는 event 라고 보면 된다
+
+const title = document.querySelector(".hello h1");
+
+console.dir(title);
+
+function handleTitleClick() {
+    title.style.color = "blue";
+}
+
+function handleMouseEnter() {
+    title.innerText = "mouse is here!";
+}
+
+function handleMouseLeave() {
+    title.innerText = "mouse is gone!";
+}
+
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
+
+#3.5 More Events
+
+- event 를 사용하는 방법은 두가지
+
+- .addEventListener(“click”, function) 와 .onclick = function 은 동일한 반응을 제공
+
+- .addEventListener() 를 더 선호하는 이유는 .removeEventListener() 를 사용하여 제거할 수 있고 보기도 좋다
+
+- window 는 document 와 같이 기본적으로 제공된다. window = 브라우저 창
+
+- document.title, document.body, document.head 와 같은 것들도 기본 제공
+
+- document.div, document.h1, document.h1 은 기본 제공이 아니고 document.querySelector(“…”)를 통해 불러와야 한다
+
+function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+
+window.addEventListener("resize", handleWindowResize);
+
+- 위 코드와 같이 window 와 body 사용 가능, resize event 도 자주 사용
+
+- 그 외의 다양한 event 들 반복되는 알고리즘으로 맘대로 사용 가능!!!!
+
+const h1 = document.querySelector(".hello h1");
+
+console.dir(h1);
+
+function handleTitleClick() {
+    h1.style.color = "blue";
+}
+
+function handleMouseEnter() {
+    h1.innerText = "mouse is here!";
+}
+
+function handleMouseLeave() {
+    h1.innerText = "mouse is gone!";
+}
+
+function handleWindowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy() {
+    alert("copier!");
+}
+
+function handleWindowOffline() {
+    alert("SOS no WIFI!");
+}
+
+function handleWindowOnline() {
+    alert("ALL GOOOD");
+}
+
+h1.addEventListener("click", handleTitleClick);
+h1.addEventListener("mouseenter", handleMouseEnter);
+h1.addEventListener("mouseleave", handleMouseLeave);
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
+
+
+#3.6 CSS in Javascript
+
+- Step 1) Find Element Step 2) Listen Event Step 3) React to that Event
+
+- 이번 강의까지 쓴 방법은 실제로는 잘 쓰지 않지만 공부를 위해서 썻다.
+
+- 다음 강의부터는 CSS 는 styles.css 에서 변경되도록 하고 앞으로 그렇게 사용할 예정
+
+- app.js 는 상호작용, 인터렉티브를 위해서 존재
+
+const h1 = document.querySelector(".hello h1");
+
+console.dir(h1);
+
+function handleTitleClick() {
+    const currentColor = h1.style.color;
+    let newColor;
+    if(currentColor === "blue"){
+        newColor = "tomato";
+    } else {
+        newColor = "blue";
+    }
+    h1.style.color = newColor;
+}
+
+h1.addEventListener("click", handleTitleClick);
+
+#3.7 CSS in Javascript part Two
+
+- style 에 적합한 도구는 CSS animation 에 적합한 도구는 Javascript
+
+- 반복되는 string 은 에러의 위험이 있다
+
+- 따라서 string 변수를 선언해서 반복되는 스트링을 준다
+
+const h1 = document.querySelector(".hello h1");
+
+
+function handleTitleClick() {
+    const clickedClass = "clicked"
+    if(h1.className === clickedClass) {
+        h1.className = ""
+    } else {
+        h1.className =clickedClass
+    }
+}
+
+h1.addEventListener("click", handleTitleClick);
+
+- 그리고 위의 코드는 클래스이름을 아예 변경해버린다. 따라서 최초의 클래스이름이 없어진다.
+
+- 해결 방법은 다음강의에서
+
+- 느낀점 : 변수 사용이 익숙해져야 한다
+
+#3.8 CSS in Javascript part Three
+
+- classList 로 className 사용시 발생되는 문제점 극복가능
+
+const h1 = document.querySelector(".hello h1");
+
+
+function handleTitleClick() {
+    const clickedClass = "clicked"
+    if(h1.classList.contains(clickedClass)) {
+        h1.classList.remove(clickedClass)
+    } else {
+        h1.classList.add(clickedClass)
+    }
+}
+
+h1.addEventListener("click", handleTitleClick);
+
+- 그리고 classList.togge(“…”) function 을 사용해서 위의 if else 문 1 줄로 대체 가능
+
+const h1 = document.querySelector(".hello h1");
+
+
+function handleTitleClick() {
+    h1.classList.toggle("clicked")
+}
+
+h1.addEventListener("click", handleTitleClick);
+
+- toggle 은 classList 에 해당되는 클래스명이 있는지 확인해보고 없으면 추가 해주고 있으면 제가하는 역활을 한다
+
+#4 Login
+
+#4.0 Input Values
+
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+const loginButton = loginForm.querySelector("button");
+
+function onLoginBtnClick() {
+    console.log("Hello", loginInput.value);
+}
+
+loginButton.addEventListener("click", onLoginBtnClick)
+
+#4.1 Form Submission
+
+- username 의 유효성 판단
+
+function onLoginBtnClick() {
+    const userName = loginInput.value;
+    if(userName === "") {
+        alert("Please wirte your name");
+    } else if(userName.length > 15) {
+        alert("Your name is too long")
+    }
+}
+
+- 위의 내용도 좋지만, 우리는 최고의 툴을 사용해야하고 이미 가지고 있는 기능들을 활용하는 것이 좋다
+
+- 따라서 위의 userName 유효성 판단은 form 의 input 태그의 기능을 사용하는 게 좋다
+
+ <form id="login-form">
+        <input required maxlength="15" type="text" placeholder="What is your name?" />
+        <button>Log In</button>
+    </form>
+
+- 그리고 form 의 button(=input type=“submit”) 의 기능으로 JS 의 click event 기능도 자동 제공된다
+
+- 하지만 form 의 button(=input type=“submit”) 을 누르면 새로고침 되는 기능이 있는데 지금 우리는 그렇게 하고 싶지 않으니까 해당 기능도 고쳐야한다
+
+#4.2 Events
+
+- 우리가 event function 을 만들고 argument 공간을 할당해주면 JS 는 argument 에 function 의 정보를 담아서 우리에게 제공해준다
+
+- 그리고 function 에 준 argument 를 이용해서 .preventDefault() 를 사용하여서 새로고침이 되는 submit event 의 default 값도 방지 할 수 있다
+
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    const userName = loginInput.value;
+    console.log(userName)
+    console.log(event);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+
+#4.3 Events part Two
+
+- 위에서 event function 이 argument 에게 object 로 주는 정보 중에는 클릭의 위치를 알려주는 것도 있다
+
+- 인수에게 주는 object 에는 timestamp, path, type 등등 아주 유용한 것들이 많다
+
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+
+const link = document.querySelector("a");
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    const userName = loginInput.value;
+    console.log(userName)
+    console.log(event);
+}
+
+function handleLinkClick(event) {
+    event.preventDefault();
+    console.log(event);
+    console.dir(event);
+    alert("clicked!");
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+link.addEventListener("click", handleLinkClick);
+
+#4.4 Getting Username
+
+- JS 의 관습에서 string 만 포함된 변수는 대문자로 작성한다 with Underbar
+
+- 변수와 문자를 결합할때 “…” + 변수명 으로 할때도 있지만, `… ${변수명}` 이 훨씬 보고좋다
+
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+const greeting = document.querySelector("#greeting");
+
+const HIDDEN_CLASSNAME = "hidden";
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const userName = loginInput.value;
+    //greeting.innerText = "Hello " + userName;
+    greeting.innerText = `Hello ${userName} keep going`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+}
+
+
+loginForm.addEventListener("submit", onLoginSubmit);
+
+#4.5 Saving Username
+
+- localStorage API, 뭔가를 브라우저에 저장하는 것중에 가장 다루기 편하다
+
+- 개발자 툴 Application 에서 확인 가능
+
+- localStorage.setItem(key, value);
+
+- localStorage.getItem(key) === value
+
+- localStorage.removeItem(key) 로 삭제도 가능
+
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+const greeting = document.querySelector("#greeting");
+
+const HIDDEN_CLASSNAME = "hidden";
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const userName = loginInput.value;
+    localStorage.setItem("userName", userName);
+    //greeting.innerText = "Hello " + userName;
+    greeting.innerText = `Hello ${userName} keep going`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+}
+
+
+loginForm.addEventListener("submit", onLoginSubmit);
+
+- 하지만 위의 코드로 작동을 하면 여전히 새로고침 후에 form 이 나온다. localStorage 에 key 와 value 는 저장되어 있음.
+
+- 그래서 이미 localStorage 에 값이 입력되어 있으면 form 이 나오지 않고 h1 이 나오도록 수정하는 법을 다음 강의에 배운다
+
+#4.6 Loading Username
+
+- 단계별로 웹사이트를 제작하며 계속 코드를 수정보완
+
+const loginForm = document.getElementById("login-form");
+const loginInput = loginForm.querySelector("input");
+const greeting = document.querySelector("#greeting");
+
+const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "userName";
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const userName = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, userName);
+    //greeting.innerText = "Hello " + userName;
+    paintGreetings(userName);
+}
+
+function paintGreetings(userName) {
+    greeting.innerText = `Hello ${userName} keep going`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+}
+
+const savedUserName = localStorage.getItem(USERNAME_KEY);
+
+if (savedUserName === null) {
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit", onLoginSubmit);
+} else {
+    paintGreetings(savedUserName);
+}
+
+#4.7 Super Recap
+
+#5 CLOCK
+
+#5.0 Intervals
+
+- intervals, timeout
+
+- interval : ‘매번’ 일어나야 하는 무언가, 매 2초마다 무슨 일이 일어나게 하고 싶을 떄 쓰는 것
+
+- setInterval(function, 밀리초);
+
+function sayHello() {
+    console.log("hello");
+}
+
+setInterval(sayHello, 5000);
+
+#5.1 Timeouts and Dates
+
+- timeout : function 을 반복하지않고 지정한 시간 후에 한번 동작
+
+function sayHello() {
+    console.log("hello");
+}
+
+setTimeout(sayHello, 5000);
+
+- Date object
+
+const clock = document.querySelector("#clock");
+
+function getClock() {
+    const date = new Date();
+    clock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+}
+
+getClock();
+setInterval(getClock, 1000);
+
+#5.2 PadStart
+
+- 우리가 자바스크립트 세계에서 문제에 부딫힐 때마다 다른 개발자들도 이전에 똑같은 문제에 부디쳤다고 보면됌
+
+- 많은 개발자들이 같은 문제를 겪고 또 겪었으면 언어 자체에 이미 그 작업을 수행하는 function 이 생겨 있음
+
+- .padStart(2,”0”) : 문자의 숫자가 지정된 만큼의 자릿수가 아니면 지정한 숫자로 앞에 패딩시켜서 자릿수를 맞춰줌
+
+- .padEnd() 는 방법 똑같고 뒤에 숫자를 패딩시켜줌
+
+- string.padStart(원하는 길이, “채워지기 원하는 문자 or 숫자) = string
+
+- 숫자를 string 으로 바꾸고 싶으면 String(숫자) 를 해주면 됌
+
+const clock = document.querySelector("#clock");
+
+function getClock() {
+    const date = new Date();
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minutes = String(date.getMinutes()).padStart(2, "0");
+    const seconds = String(date.getSeconds()).padStart(2, "0");
+    clock.innerText = `${hours}:${minutes}:${seconds}`;
+}
+
+getClock();
+setInterval(getClock, 1000);
+
+#5.3 Recap
+
+- 다음 강의를 들을 떈 최소한 명언 10개를 가져오기
+
+#6 QUOTES AND BACKGROUND
+
+#6.0 Quotes
+
+- Math module : 자바스크립트에 기본으로 load 되어 있고 수많은 유의미한 함수들이 있고 .random() 도 그중에 하나
+
+- Math.random() : 우리에게 0 부터 1까지의 수 중에서 랜덤으로 제공
+
+- 하지만 우리는 0에서 10까지의 숫자가 필요하다
+
+- 따라서 우리는 Math.random() * 10 을 하여 0부터 1의 숫자를 받는다
+
+- 문제는 소수점(float)을 가지게 된다. 우리는 정수(interger)만 필요하다.
+
+- 소수점을 없애기 위해선 3가지 방법이 있다 1) Math.round(숫자) : 소수점을 반올림 시켜줌 2) Math.ceil(숫자) : 소수점을 올림해줌 3) Math.floor(숫자) : 소수점을 내림해줌, 없애줌
+
+const quotes = [
+    {
+        quote: "다윗의 아들 이스라엘 왕 솔로몬의 잠언이라 - 잠언 1장 1절",
+        author: "솔로몬",
+    },
+    {
+        quote: "이는 지혜와 훈계를 알게 하며 명철의 말씀을 깨닫게 하며 - 잠언 1장 2절",
+        author: "솔로몬",
+    },
+    {
+        quote: "지혜롭게, 공의롭게, 정의롭게, 정직하게 행할 일에 대하여 훈계를 받게 하며 - 잠언 1장 3절",
+        author: "솔로몬",
+    },
+    {
+        quote: "어리석은 자를 슬기롭게 하며 젊은 자에게 지식과 근신함을 주기 위한 것이니 - 잠언 1장 4절",
+        author: "솔로몬",
+    },
+    {
+        quote: "지혜 있는 자는 듣고 학식이 더할 것이요 명철한 자는 지략을 얻을 것이라 - 잠언 1장 5절",
+        author: "솔로몬",
+    },
+    {
+        quote: "잠언과 비유와 지혜 있는 자의 말과 그 오묘한 말을 깨달으리라 - 잠언 1장 6절",
+        author: "솔로몬",
+    },
+    {
+        quote: "여호와를 경외하는 것이 지식의 근본이거늘 미련한 자는 지혜와 훈계를 멸시하느니라 - 잠언 1장 7절",
+        author: "솔로몬",
+    },
+    {
+        quote: "내 아들아 네 아비의 훈계를 들으며 네 어미의 법을 떠나지 말라 - 잠언 1장 8절",
+        author: "솔로몬",
+    },
+    {
+        quote: "이는 네 머리의 아름다운 관이요 네 목의 금 사슬이니라 - 잠언 1장 9절",
+        author: "솔로몬",
+    },
+    {
+        quote: "내 아들아 악한 자가 너를 꾈지라도 따르지 말라 - 잠언 1장 10절",
+        author: "솔로몬",
+    },
+];
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+
+console.log(quotes[Math.floor(Math.random() * 10)]);
+
+- 문제는 우리가 숫자 10을 Hard Coding 해줬음, 성경구절 숫자에 따라서 숫자를 수동으로 수정해야함
+
+- 따라서 array 가 얼마나 긴지 저절로 알게하는 방법을 사용 : Array.length
+
+const quotes = [
+    {
+        quote: "다윗의 아들 이스라엘 왕 솔로몬의 잠언이라 - 잠언 1장 1절",
+        author: "솔로몬",
+    },
+    {
+        quote: "이는 지혜와 훈계를 알게 하며 명철의 말씀을 깨닫게 하며 - 잠언 1장 2절",
+        author: "솔로몬",
+    },
+    {
+        quote: "지혜롭게, 공의롭게, 정의롭게, 정직하게 행할 일에 대하여 훈계를 받게 하며 - 잠언 1장 3절",
+        author: "솔로몬",
+    },
+    {
+        quote: "어리석은 자를 슬기롭게 하며 젊은 자에게 지식과 근신함을 주기 위한 것이니 - 잠언 1장 4절",
+        author: "솔로몬",
+    },
+    {
+        quote: "지혜 있는 자는 듣고 학식이 더할 것이요 명철한 자는 지략을 얻을 것이라 - 잠언 1장 5절",
+        author: "솔로몬",
+    },
+    {
+        quote: "잠언과 비유와 지혜 있는 자의 말과 그 오묘한 말을 깨달으리라 - 잠언 1장 6절",
+        author: "솔로몬",
+    },
+    {
+        quote: "여호와를 경외하는 것이 지식의 근본이거늘 미련한 자는 지혜와 훈계를 멸시하느니라 - 잠언 1장 7절",
+        author: "솔로몬",
+    },
+    {
+        quote: "내 아들아 네 아비의 훈계를 들으며 네 어미의 법을 떠나지 말라 - 잠언 1장 8절",
+        author: "솔로몬",
+    },
+    {
+        quote: "이는 네 머리의 아름다운 관이요 네 목의 금 사슬이니라 - 잠언 1장 9절",
+        author: "솔로몬",
+    },
+    {
+        quote: "내 아들아 악한 자가 너를 꾈지라도 따르지 말라 - 잠언 1장 10절",
+        author: "솔로몬",
+    },
+];
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+
+const todaysQuotes = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = todaysQuotes.quote;
+author.innerText = todaysQuotes.author;
+
+#6.1 Background
+
+- Javascript 에서 뭔가 만들어서 HTML 에 추가
+
+const images = ["01.png", "02.png", "03.png", "04.png", "05.png", "06.png", "07.png", "08.png", "09.png", "10.png"];
+
+const chosenImage = images[Math.floor(Math.random() * quotes.length)];
+
+const bgImage = document.createElement("img");
+
+bgImage.src = `img/${chosenImage}`;
+
+console.log(bgImage);
+
+- document.createElement(“…”); 사용
+
+- 해당 HTML 태그를 변수에 저장
+
+- 그리고 document.body.appendChild(“변수”); 사용해서 HTML 에 더해준다
+
+const images = ["01.png", "02.png", "03.png", "04.png", "05.png", "06.png", "07.png", "08.jpeg", "09.jpeg", "10.png"];
+
+const chosenImage = images[Math.floor(Math.random() * quotes.length)];
+
+const bgImage = document.createElement("img");
+
+bgImage.src = `img/${chosenImage}`;
+
+document.body.appendChild(bgImage);
+
+#6.2 Recap
+
+#7 TO DO LIST
+
+#7.0 Setup
+
+#7.1 Adding To Dos
+
+const toDoForm = document.getElementById("todo-form");
+const toDoInput = toDoForm.querySelector("input");
+const toDoList = document.getElementById("todo-list");
+
+function paintToDo(newToDo) {
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    li.appendChild(span);
+    span.innerText = newToDo;
+    toDoList.appendChild(li);
+}
+
+function handleToDoSubmit(event) {
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    toDoInput.value = "";
+    paintToDo(newToDo);
+}
+
+toDoForm.addEventListener("submit", handleToDoSubmit)
+
+#7.2 Deleting To Dos
+
+- apeend 는 맨 마지막에 놓여있어야 한다
+
+- console.log(“ “); event : click -> event.target : button -> event.target.parentElement : li
+	
+	콘솔로그를 통해서 정보를 얻을 수 있따
+
+const toDoForm = document.getElementById("todo-form");
+const toDoInput = toDoForm.querySelector("input");
+const toDoList = document.getElementById("todo-list");
+
+function deleteToDo(event) {
+    const li = event.target.parentElement;
+    li.remove();
+}
+
+function paintToDo(newToDo) {
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    span.innerText = newToDo;
+    const button = document.createElement("button");
+    button.innerText = "❌";
+    button.addEventListener("click", deleteToDo);
+    li.appendChild(span);
+    li.appendChild(button);
+    toDoList.appendChild(li);
+}
+
+function handleToDoSubmit(event) {
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    toDoInput.value = "";
+    paintToDo(newToDo);
+}
+
+toDoForm.addEventListener("submit", handleToDoSubmit);
+
+#7.3 Saving To Dos
+
+- Add -> save -> load 순으로 작동하고 localStorage 이용
+
+- 하지만 localStorage 에는 array 를 넣을 수가 없음, only text
+
+- 따라서 array 를 string 으로 변환해서 넣어줌
+
+- array 를 string 으로 변환해줄 때는 JSON.stringify( ); 사용
+
+- JSON.stringify() 는 array 나 object, 어떤 자바스크립트 코드든 string 으로 만들어줌
+
+- 하지만 우리는 아직 새로고침하면 localStorage 가 새로 입력 받는 값들로 대치되는 오류가 있다
+
+- 그래서 새로고침하고 새로운 input.value 값을 받기전에 화면에 painting 해주면 된다
+
+- 다음 강의에선 JSON.stringify() 를 이용하여 string 으로 저장된 locaStorage 의 value 값을 불러오는 방법에 대해 공부
+
+const toDoForm = document.getElementById("todo-form");
+const toDoInput = toDoForm.querySelector("input");
+const toDoList = document.getElementById("todo-list");
+
+const toDos = [];
+
+function saveToDos() {
+    localStorage.setItem("todos", JSON.stringify(toDos));
+}
+
+function deleteToDo(event) {
+    const li = event.target.parentElement;
+    li.remove();
+}
+
+function paintToDo(newToDo) {
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    span.innerText = newToDo;
+    const button = document.createElement("button");
+    button.innerText = "❌";
+    button.addEventListener("click", deleteToDo);
+    li.appendChild(span);
+    li.appendChild(button);
+    toDoList.appendChild(li);
+}
+
+function handleToDoSubmit(event) {
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    toDoInput.value = "";
+    toDos.push(newToDo);
+    paintToDo(newToDo);
+    saveToDos();
+}
+
+toDoForm.addEventListener("submit", handleToDoSubmit);
+
+#7.4 Loading To Dos part One
+
+- JSON.parse( ); JSON.stringify(); 로 변환된 string 을 다시 object 나 array 로 변환할 수 있다
+
+- .forEach() : array 각각 항목에 function 을 줄 수 있게 해줌, 각각의 항목들마다 forEach() 에 맵핑 되어있는 function 실행
+
+- arrow function : shorcut(단축키) 같은 기능
+
+- arrow function 을 사용 안한 예시  function sayHello(item) {
+     console.log("hello", item);
+ }
+    parsedToDos.forEach(sayHello);
+
+
+- arrow funcion 을 사용한 예시
+
+    parsedToDos.forEach((item) => console.log(`Hello ${item}`));
+
+- 함수 선언을 따로 안해도 된다. 모든 것이 동일하게 작동 앞으로 arrow function 사용, .forEach() 사용할 때
+
+#7.5 Loading To Dos part Two
+
+- const -> let 
+
+const toDoForm = document.getElementById("todo-form");
+const toDoInput = toDoForm.querySelector("input");
+const toDoList = document.getElementById("todo-list");
+
+const TODOS_KEY = "todos";
+
+let toDos = [];
+
+function saveToDos() {
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+}
+
+function deleteToDo(event) {
+    const li = event.target.parentElement;
+    li.remove();
+}
+
+function paintToDo(newToDo) {
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    span.innerText = newToDo;
+    const button = document.createElement("button");
+    button.innerText = "❌";
+    button.addEventListener("click", deleteToDo);
+    li.appendChild(span);
+    li.appendChild(button);
+    toDoList.appendChild(li);
+}
+
+function handleToDoSubmit(event) {
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    toDoInput.value = "";
+    toDos.push(newToDo);
+    paintToDo(newToDo);
+    saveToDos();
+}
+
+ toDoForm.addEventListener("submit", handleToDoSubmit);
+ const savedToDos = localStorage.getItem(TODOS_KEY);
+ 
+if(savedToDos) {
+    const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
+}
+
+#7.6 Deleteing To Dos part One
+
+- random ID 를 사용
+
+- li 에 id 를 줘서 지운다
+
+- localStorage 에 오브젝트 형식으로 저장
+
+- 자바스크립트 프리터에대해서 공부해봐야겠다
+
+const toDoForm = document.getElementById("todo-form");
+const toDoInput = toDoForm.querySelector("input");
+const toDoList = document.getElementById("todo-list");
+
+const TODOS_KEY = "todos";
+
+let toDos = [];
+
+function saveToDos() {
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+}
+
+function deleteToDo(event) {
+    const li = event.target.parentElement;
+    console.log(li.id);
+    li.remove();
+}
+
+function paintToDo(newToDo) {
+    const li = document.createElement("li");
+    li.id = newToDo.id;
+    const span = document.createElement("span");
+    span.innerText = newToDo.text;
+    const button = document.createElement("button");
+    button.innerText = "❌";
+    button.addEventListener("click", deleteToDo);
+    li.appendChild(span);
+    li.appendChild(button);
+    toDoList.appendChild(li);
+}
+
+function handleToDoSubmit(event) {
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    toDoInput.value = "";
+    const newToDoObj = {
+        text: newToDo,
+        id: Date.now(),
+    };
+    toDos.push(newToDoObj);
+    paintToDo(newToDoObj);
+    saveToDos();
+}
+
+ toDoForm.addEventListener("submit", handleToDoSubmit);
+ const savedToDos = localStorage.getItem(TODOS_KEY);
+ 
+if(savedToDos) {
+    const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
+}
+
+#7.7 Deleting To Dos part Two
+
+- 지우는 기능을 만들때 array 에서 지우고 싶은 항목을 빼는 것이 아니라 지우고싶은 항목을 제외하고 새로운 array 를 만들어 준다.
+
+- array.filter(function) : array 의 각 항목들을 function 에서 검사해서 true 값들만 포함된 array 를 return 한다.
+
+- 순찰, 해당 항목 포함된 부모 리스트 삭제, 해당 항목을 변수로 받기, 연습
+
+#7.8 Deleteing To Dos part Three
+
+- parseInt(string) : string 을 number 로 바꿔줌
+
+const toDoForm = document.getElementById("todo-form");
+const toDoInput = toDoForm.querySelector("input");
+const toDoList = document.getElementById("todo-list");
+
+const TODOS_KEY = "todos";
+
+let toDos = [];
+
+function saveToDos() {
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+}
+
+function deleteToDo(event) {
+    const li = event.target.parentElement;
+    li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
+}
+
+function paintToDo(newToDo) {
+    const li = document.createElement("li");
+    li.id = newToDo.id;
+    const span = document.createElement("span");
+    span.innerText = newToDo.text;
+    const button = document.createElement("button");
+    button.innerText = "❌";
+    button.addEventListener("click", deleteToDo);
+    li.appendChild(span);
+    li.appendChild(button);
+    toDoList.appendChild(li);
+}
+
+function handleToDoSubmit(event) {
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    toDoInput.value = "";
+    const newToDoObj = {
+        text: newToDo,
+        id: Date.now(),
+    };
+    toDos.push(newToDoObj);
+    paintToDo(newToDoObj);
+    saveToDos();
+}
+
+ toDoForm.addEventListener("submit", handleToDoSubmit);
+ const savedToDos = localStorage.getItem(TODOS_KEY);
+ 
+if(savedToDos) {
+    const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
+}
+
+#8 WEATHER
+
+#8.0 Geolocation
+
+navigator.geolocation.getCurrentPosition()
+- 위의 코드를 부르면 브라우저에서 위치 좌표를 줌, wifi, 위치, gps 등
+
+- getCurrentPosition() 함수는 두 개의 인자를 함수로 받고 앞의 함수는 위치가 잘 불러와 졌을때, 두번째는 위치가 잘 불러져오지 않았을 때 이다
+
+- 직접 콘솔로그를 확인하면서 오브젝트들을 추적한다
+
+function onGeoOk(position) {
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+    console.log("You live in", lat, lng);
+}
+
+function onGeoError() {
+    alert("Can't find where you at. No Weather for you.")
+}
+
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+
+- openweathermap.org 에 가입하고 API 사용 준비
+
+#8.1 Weather API
+
+- API 는 다른서버와 이야기 할 수 있는 방법
+
+- fetch(url); , 개발자도구 네트워크에서 확인
+
+- fetch 는 promise 다. promise 는 바로 동작하는 게 아니라 서버에 물어보고 응답이 와야 반응한다는 뜻 
+
+- 따라서 fetch(url).then, then 을 사용해야 된다
+
+const API_KEY = "2f909706f44638b023e78b5daa4be66b";
+
+
+function onGeoOk(position) {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+    fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+        const weather = document.querySelector("#weather span:first-child");
+        const city = document.querySelector("#weather span:last-child");
+        weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+        city.innerText = data.name;
+    });
+}
+
+function onGeoError() {
+    alert("Can't find where you at. No Weather for you.")
+}
+
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+
+- 항상 console.log 부터 확인하면서 차근차근 배운대로 펑션 및 변수를 추가해주면서 코딩한다
+
+#8.2 Conclusion
+
+- CSS 로 예쁘게 꾸미면 됌
